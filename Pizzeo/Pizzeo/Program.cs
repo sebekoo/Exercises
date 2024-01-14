@@ -32,11 +32,11 @@ namespace Pizzeo
             fieldPizza1 = PizzaField(diameterPizza1);
             fieldPizza2 = PizzaField(diameterPizza2);
 
-            fieldPizza1ForGold = FieldPizzaPerGold(fieldPizza1, pricePizza1);
-            fieldPizza2ForGold = FieldPizzaPerGold(fieldPizza2, pricePizza2);
+            fieldPizza1ForGold = FieldPizzaForGold(fieldPizza1, pricePizza1);
+            fieldPizza2ForGold = FieldPizzaForGold(fieldPizza2, pricePizza2);
 
             Console.WriteLine($"\nFor 1 $ you will recive : {fieldPizza1ForGold} cm^2 pizza 1.");
-            Console.WriteLine($"              or : {fieldPizza2ForGold} cm^2 pizza 2.\n");
+            Console.WriteLine($"                     or : {fieldPizza2ForGold} cm^2 pizza 2.\n");
 
             if (fieldPizza1ForGold > fieldPizza2ForGold)
             {
